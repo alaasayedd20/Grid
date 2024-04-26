@@ -1,0 +1,533 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.head-p{
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+}
+.hard-p{
+    font-size: 26px;
+
+}
+.soft-p{
+    font-size: 18px;
+    color: #9fa3a7;
+    font-size: 15px;
+    font-weight: 50;
+    font-family: Montserrat, sans-serif;
+}
+h5{
+    letter-spacing: 2px;
+}
+
+
+
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "iphone iphone learn-more learn-more"
+    "keyboard IMAC IMAC iCloud"
+    "game best-choice best-choice iCloud"
+    "twitter popular TV-vision TV-vision";
+    min-height: 100vh;
+
+}
+
+.iphone{
+    grid-area: iphone;
+    display: flex;
+}
+.iphone .iphone-text{
+    width: 50%;
+    padding:  10% 10% 0 10%;
+    justify-content: center;
+}
+
+.iphone .iphone-image{
+    width: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 0;
+    align-content: flex-end;
+}
+.iphone .iphone-image img{
+    width: 65%;
+    display: block;
+}
+
+
+
+.learn-more{
+    background-color:#f7f8f9;
+    grid-area: learn-more;
+    text-align: center;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+.learn-more .contain{
+    padding: 0 10%;
+}
+.learn-more .contain h1{
+    font-size: 50px;
+    font-weight: 200;
+}
+.learn-more .contain a{
+    color: #27b9c2;
+}
+
+
+
+
+.keyboard{
+    background-color:#f05638;
+    grid-area: keyboard;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    justify-content: center;
+    align-content: center;
+}
+.keyboard .keyboard-image img{
+    width: 100%;
+}
+.keyboard .keyboard-text{
+    padding: 10px 20% 0 20%;
+    
+} 
+.keyboard .keyboard-text h2{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 32px;
+}
+.keyboard .keyboard-text a{
+    color: #ffc80a;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+
+
+
+.IMAC{
+    grid-area: IMAC;
+    display: flex;
+}
+.IMAC .left-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.IMAC .left-content .text{
+    padding: 15% 25% 0 25%;
+
+}
+.IMAC .left-content .image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25%;
+}
+.IMAC .left-content .image img{
+    width: 100%;
+}
+.IMAC .right-content{
+    width: 50%;
+    overflow: hidden;
+    padding: 7% 10% 0 0;
+    font-size: 22px;
+    line-height: 25px;
+}
+.IMAC .right-content a{
+    color: #27b9c2;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.iCloud{
+    background-color:#8f76BC;
+    grid-area: iCloud;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iCloud .circle{
+    background-color: #8166B0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.iCloud .circle .head {
+    display: flex;
+    background-color: #8f76BC;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+.iCloud .circle .head img{
+    width: 10%;
+    margin: 5px;
+}
+.iCloud .circle h5{
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+}
+.iCloud .circle img{
+    width: 60%;
+}
+.iCloud .down{
+    text-align: center;
+    font-style: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 15% 0 15%;
+}
+.iCloud .down h2{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    line-height: 32px;
+}
+.iCloud .down p{
+    padding: 5% 0;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}
+.iCloud .down button{
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    background-color: #ffc80a;
+}
+
+
+
+
+
+
+.game{
+    background-color:#f7f8f9;
+    grid-area: game;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game img{
+    width: 75%;
+    padding-right: 50px;
+}
+.game a{
+    color: #27b9c2;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+.best-choice{
+    
+    background-color:#93b6b7;
+    grid-area: best-choice;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+
+}
+.best-choice .head{
+    width: 100px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    color: white;
+    background-color: #f05638;
+    border-radius: 5px;
+}
+.best-choice .head h6{
+    margin: auto;
+    letter-spacing: 2px;
+}
+.best-choice h2{
+    padding:0 35% 60px 35%;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 32px;
+}
+.best-choice .content-image{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.best-choice img{
+    width: 80%;
+    justify-content:  center;
+    
+}
+
+
+
+
+
+
+
+.twitter{
+    text-align: center;
+    background-color:#38d5f4;
+    grid-area: twitter;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.twitter .circle{
+    background-color: #35cfed;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.twitter .circle img{
+    width: 20%;
+   margin-bottom: 5%;
+}
+.twitter .circle p{
+    margin-top: 8%;
+    color: white;
+    padding: 0 20%;
+    line-height: 38px;
+}
+
+
+
+
+
+.popular{
+    background-color:#f7f8f9;
+    grid-area: popular;
+    text-align: center;
+}
+.popular .head{
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 30px auto;
+
+    color: white;
+    background-color: #7bc424;
+    border-radius: 5px;
+} 
+.popular .head h6{
+    margin: auto;
+    letter-spacing: 2px;
+}
+.popular h2{
+    padding: 30px 15% 50px 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 550;
+    color: #333;
+    
+}
+
+
+
+
+
+.TV-vision{
+    background-color:#2c2c2c;
+    grid-area: TV-vision;
+    display: flex;
+}
+.TV-vision .image{
+    width: 50%;
+}
+.TV-vision .text{
+    width: 50%;
+    justify-content: center;
+    padding: 15% 20% 0 0;
+}
+.TV-vision .text h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 550;
+    color: white;
+}
+
+.TV-vision .image img{
+    width: 80%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 0.6fr;
+        grid-template-areas: 
+            "learn-more learn-more"
+            "iphone iphone"
+            "keyboard game"
+            "IMAC IMAC"
+            "twitter iCloud"
+            "best-choice iCloud"
+            "popular popular"
+            "TV-vision TV-vision"
+        ;
+    }    
+}
+@media screen and (max-width: 750px){
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.3fr 0.5fr 0.5fr 0.3fr 0.5fr 0.4fr 1fr 0.1fr 0.5fr;
+        grid-template-areas: 
+            "learn-more"
+            "iphone"
+            "keyboard"
+            "game"
+            "IMAC"
+            "twitter"
+            "best-choice"
+            "iCloud"
+            "popular"
+            "TV-vision"
+        ;
+    }
+    .learn-more{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .iphone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iphone .iphone-text{
+        width: 100%;
+        padding: 5px 50px;
+        margin: auto;
+        
+    }
+    .IMAC{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding: 0;
+        
+    }
+    .IMAC .left-content{
+        padding: 40px 15px 0 15px;
+        width: 100%;
+    }
+    .IMAC .left-content .image img{
+        width: 100%;
+    }
+    .IMAC .right-content{
+        width: 100%;
+        padding: 40px 15px 40px 15px;
+    }
+    .IMAC .left-content .text{
+        padding: 0;
+    
+    }
+    .IMAC .left-content .image{
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+    .best-choice h2{
+        padding:0 50px 30px 50px;
+    }
+    .best-choice .head{
+        margin: 20px 30px 0 30px;
+        color: white;
+        background-color: #f05638;
+        border-radius: 5px;
+    }
+    .popular .head{
+        text-align: center;
+        width: 100px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto 5px auto;
+    
+    } 
+    .TV-vision{
+        display: flex;
+        flex-direction: column;
+    }
+    .TV-vision .image{
+        width: 100%;
+    }
+    .TV-vision .text{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 15px 40px;
+    }   
+
+    
+}
